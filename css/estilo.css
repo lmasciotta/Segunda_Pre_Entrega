@@ -69,14 +69,19 @@ header{
 
 /*:::::INDEX*/
 
+.home{
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 2%;
+}
+
 .logo{
-    position: relative;
     width: 10%;
     z-index: 0;
 
 }
 .logo2{
-    position: relative;
     width: 10%;   
     z-index: 1;
     margin-bottom: -3%;
@@ -84,6 +89,7 @@ header{
 }
 
 h1{
+    padding: 1%;
     color: rgb(192, 192, 192);
     font-family: 'Lato';
     font-size: 300%;
@@ -106,19 +112,14 @@ h4{
     text-shadow: 1px 1px 1px rgb(10, 10, 10);
 }
 
-section{
-    margin-top: 2%;
-    text-align: center;
-}
 
 .reseña{
     color: goldenrod;
     font-style: bold;
+    padding: 1%;
 }
 
 .hinchas{
-    display: flex;
-    padding: 0%;
     margin: 0 auto;
     width: 20%;
     border-radius: 40%;
@@ -195,13 +196,23 @@ color: aliceblue;
 /*:::::IMAGENES*/
 
 .titulo_galeria{
-    padding: 2%;
+    padding: 3%;
+    font-size: 75px;
+    background-color: rgb(35, 35, 130);
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    border-style: groove;
+    border: red solid;
+    color: brown;
 }
 .fotos{
+    padding: 1%;
     margin: 0 auto;
-    width: 90%;
-    background-color: black;
-    border: 2px gold solid;
+    width: 75%;
+    background-color:  rgb(35, 35, 130);
+    border: 2px red solid;
     display: grid;
     grid-template-columns: repeat(5, 1fr); 
     grid-template-rows: repeat(4, 1fr); 
@@ -305,7 +316,7 @@ color: aliceblue;
     text-align: center;
 }
 
-.boton_descarga{
+.home_boton{
     width: 30%;
     margin: 0 auto;
     text-align: center;
@@ -328,3 +339,32 @@ color: aliceblue;
     font-weight: 900;
 }
 
+
+
+    @media screen and (max-width: 768px) {
+        /* Estilos para pantallas pequeñas */
+        .header_menu {
+            display: block; /*menú normal vertical*/
+        }
+        .header_nav {
+            display: block; /* Mostrar el menú desplegable */
+        }
+        .header_nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .header_nav li {
+            margin-bottom: 10px;
+        }
+        .header_nav a {
+            display: block;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+        }
+        .fotos{
+            display:flex;
+            flex-direction: column;
+        }
