@@ -60,14 +60,49 @@ header{
 
 }
 .header_link:hover{
-    color: rgb(186, 29, 29);
-    background-color: rgb(36, 36, 146);
-    border-radius: 30%;
+    color: rgb(36, 36, 146);
+    background-color: rgb(186, 29, 29);
+    border-radius: 25px;
 
 }
 
+/*:::::FOOTER*/
+footer{
+    color: rgb(160, 160, 161);
+    display: flex;
+    flex-direction: column;
+    margin-top: 25%;
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    text-align: center;
+    border-radius: 1%;
+    opacity: 0.9;
+    }
 
-/*:::::INDEX*/
+.container{
+    margin-top: 1%;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+.contacto a{
+    text-decoration: none;
+}
+.redes a:hover{
+color: aliceblue;
+}
+
+
+.iconfooter{
+    position: relative;
+    width: 3%;
+}
+
+
+/*::::: PAGINA INDEX*/
 
 .home{
     display: flexbox;
@@ -129,43 +164,7 @@ h4{
 }
 
 
-/*:::::Pie de Pagina*/
-footer{
-    color: rgb(160, 160, 161);
-    display: flex;
-    flex-direction: column;
-    margin-top: 25%;
-    background-color: rgb(0, 0, 0);
-    background-size: cover;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    text-align: center;
-    border-radius: 1%;
-    opacity: 0.9;
-    }
-
-.container{
-    margin-top: 1%;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-}
-
-.contacto a{
-    text-decoration: none;
-}
-.redes a:hover{
-color: aliceblue;
-}
-
-
-.iconfooter{
-    position: relative;
-    width: 3%;
-}
-
-
-/*:::::HISTORIA*/
+/*:::::PÁGINA HISTORIA*/
 
 .titulo_historia{
     padding: 3%;
@@ -193,19 +192,20 @@ color: aliceblue;
     opacity: 0.9;
 }
 
-/*:::::IMAGENES*/
+/*:::::PÁGINA IMAGENES*/
 
 .titulo_galeria{
     padding: 3%;
     font-size: 75px;
-    background-color: rgb(35, 35, 130);
+    background: rgb(29,21,93);
+    background: linear-gradient(90deg, rgba(29,21,93,1) 0%, rgba(60,65,133,1) 0%, rgba(14,25,167,1) 0%, rgba(215,211,45,1) 0%, rgba(116,95,0,1) 0%, rgba(194,193,186,1) 0%, rgba(255,255,255,1) 48%, rgba(207,206,206,1) 100%, rgba(85,79,18,1) 100%, rgba(0,18,255,1) 100%, rgba(36,53,232,1) 100%, rgba(59,53,228,1) 100%, rgba(30,31,120,1) 100%, rgba(30,31,120,1) 100%, rgba(255,4,0,1) 100%, rgba(240,5,5,1) 100%, rgba(97,96,93,1) 100%);
     width: 40%;
     margin: 0 auto;
     text-align: center;
     border-radius: 20px;
     border-style: groove;
-    border: red solid;
-    color: brown;
+    border: rgb(171, 21, 21) solid;
+    color: rgb(29,21,93); 
 }
 .fotos{
     padding: 1%;
@@ -251,57 +251,68 @@ color: aliceblue;
 
 
 
-/*:::::ASOCIATE*/
+/*:::::PÁGINA ASOCIATE*/
 
-.titulo_asociate{
+.formulario{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2%;
+
+}
+
+.formulario_titulo{
     padding: 2%;
     margin:0 auto;
     text-align: center;
     font-size: 400%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: silver;
 }
 
-.titulo_asociate2{
+.formulario_subtitulo{
     width: 70%;
     margin: 0% auto;
     border: solid gray;
+    border-radius: 10px;
     text-align: center;
     font-size: 250%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: rgb(21, 22, 93);
     background: rgb(194, 15, 15);
+    opacity: 0.9;
 }
 
-.formulario{
+.formulario_texto{
     color: white;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
     background-color: black;
+    width: 28%;
+    border-radius: 10px;
+
 }
 
-.asociate_logo2{
-    width: 8%;
-    display: flex;
-    flex-wrap: wrap;
+.formulario h3{
+    color:red;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px rgb(47, 46, 46);
+    text-decoration: underline;
 }
-
-.registro_completo{
-    width: 5%;
-    display:flex;
-    justify-content:flex-start;
-}
-
-
-.boton{
-    background-color: gold;
-    color: black;
+.formulario_logo{
+    padding: 1%;
     border-radius: 5%;
 }
-
-
-
-/*:::::LA VUELTA A BOEDO*/
+.formulario_logo2{
+    padding: 10%;
+}
+.formulario_boton{
+    color: black;
+    background-color: gold;
+    border: 1px #fff solid;
+    border-radius: 5px;
+}
+/*::::: PÁGINA PROYECTO LA VUELTA A BOEDO*/
 
 .titulo_vab{
     padding: 3%;
@@ -332,7 +343,7 @@ color: aliceblue;
     font-size: 16px;
 }
 
-.texto_boton{
+.home_texto{
     text-decoration: none;
     color:rgb(44, 43, 43);
     font-family: 'Courier New', Courier, monospace;
@@ -340,31 +351,75 @@ color: aliceblue;
 }
 
 
+/*:::::MEDIA QUERI PAGINA GALERIA*/
 
-    @media screen and (max-width: 768px) {
-        /* Estilos para pantallas pequeñas */
+@media only screen and (max-width: 768px) {
+        /* Estilos para dispositivos con un ancho máximo de 768 píxeles */
         .header_menu {
-            display: block; /*menú normal vertical*/
+        flex-direction: column;
         }
-        .header_nav {
-            display: block; /* Mostrar el menú desplegable */
+        .header_item {
+        margin-bottom: 10px;
         }
-        .header_nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
+        .titulo_galeria {
+        font-size: 28px;
         }
-        .header_nav li {
-            margin-bottom: 10px;
+        .fotos {
+        display: block;
         }
-        .header_nav a {
-            display: block;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-            text-decoration: none;
+}
+
+@media only screen and (max-width: 480px) {
+        /*Estilos para dispositivos con un ancho máximo de 480 píxeles */
+        .header_logo {
+        width: 50%;
         }
-        .fotos{
-            display:flex;
-            flex-direction: column;
+        .header_item {
+        font-size: 14px;
         }
+        .titulo_galeria {
+        font-size: 24px;
+        }
+        .fotos {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+/*:::::MEDIA QUERI PAGINA INDEX*/
+
+@media screen and (max-width: 768px) {
+    /*Estilos ara dispositivos con un ancho máximo de 768px */
+    .header_menu {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    }
+    .header_item {
+    margin: 10px 0;
+    }
+    .header_logo {
+    margin-bottom: 20px;
+    }
+    .header_nav {
+    background-color: #fff;
+    padding: 10px;
+    }
+    .logo {
+    width: 50%;
+    margin: auto;
+    display: block;
+    }
+    .logo2 {
+    width: 40%;
+    margin: auto;
+    display: block;
+    }
+    h1 {
+    font-size: 2em;
+    text-align: center;
+    }
+    .hinchas {
+    width: 100%;
+    }
+}
